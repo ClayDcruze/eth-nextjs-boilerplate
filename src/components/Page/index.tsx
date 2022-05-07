@@ -24,7 +24,7 @@ export const Page: FC = ({ children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Flex direction="column" backgroundColor="#1F1B24">
+      <Flex direction="column" backgroundColor="#19181E">
         <Header />
         <main>{children}</main>
         <Footer />

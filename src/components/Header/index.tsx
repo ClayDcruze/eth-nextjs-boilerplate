@@ -22,7 +22,7 @@ import { useConnect, useAccount, defaultChains, defaultL2Chains } from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import { WalletLinkConnector } from 'wagmi/connectors/walletLink'
-import { shorten } from '../../utils/shorten.ts'
+import { shorten } from '../../utils/shorten'
 import { NavButton } from './NavButton'
 import { NavDrawerItem, NavItem } from './NavItem'
 
@@ -56,7 +56,7 @@ export const Header = () => {
 
   const navItems = [
     {
-      text: 'home',
+      text: 'link account',
       href: '/'
     },
     {
@@ -64,11 +64,7 @@ export const Header = () => {
       href: '/about',
       icon: <InformationCircleIcon className="h-6 w-6" />
     },
-    {
-      text: '404 page',
-      href: '/error',
-      icon: <InformationCircleIcon className="h-6 w-6" />
-    }
+ 
   ]
 
 
@@ -84,8 +80,8 @@ export const Header = () => {
           <Box fontWeight="bold" fontSize={[20, 20, 20]}>
             <NextLink href="/" passHref>
               <Link className="center flex gap-2">
-                <span>👽</span>
-                <span className="text-xl">ilyxium</span>
+                <span><img src="/logo.png" alt="" /></span>
+                <span className="text-xl"></span>
               </Link>
             </NextLink>
           </Box>
@@ -151,7 +147,7 @@ export const Header = () => {
       >
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerBody background="#1F1B24" px={2}>
+          <DrawerBody background="#19181E" px={2}>
             {/* Top Wrapper */}
             <Box
               fontWeight="bold"

@@ -4,13 +4,14 @@ import { extendTheme } from '@chakra-ui/react'
 // Version 1: Using objects
 export const theme = extendTheme({
   colors: {
-    backgroundDark: '#1F1B24',
+    backgroundDark: '#19181E',
+    background: '#19181E',
   },
   styles: {
     global: {
       body: {
-        bg: '#1F1B24',
-        color: 'white'
+        bg: '#19181E',
+        color: '#E1EDFC'
       }
     }
   }
